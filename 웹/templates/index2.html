@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}홈페이지{%endblock%}
+{% block content %}
+
+
+ <style>
+     @media screen and (max-width: 75rem) { 
+         img { display: none; }
+         #opbg { display: none; }} 
+     body{height: 100vh;
+        background-color: rgb(39, 34, 31);
+        
+       }
+       .bgBlur::before{
+           position: fixed;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        width: 99.5%;
+        background:  url('/static/main.png');
+        background-repeat : no-repeat;
+        background-size : cover;
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+        z-index: -1; 
+        transform: scale(1.01);
+        content: "";
+        overflow:hidden; 
+        
+    }
+        
+    .container{
+        
+        z-index: 9999;}
+
+ </style>
+<div class="bgBlur">
+
+   <br>
+<div class="container" style="margin: auto auto; padding: 0px; text-align : center; "> <!--상하좌우-->
+    <div class="card bg-dark  text-white" style="width: 95%; margin: auto;">
+        <img src="/static/main.png" class="card-img-top" alt="...">
+        <div class="card-img-overlay" id="opbg" style="background-color: rgb(29, 20, 17); opacity: 55%;"></div>
+        <div class="card-img-overlay" ><br><br><br><br><br><br><br>
+        <h4 class="card-title"><b>왜 경제코너에는  주식에  대한 책만 많을까?</b></h4><br>
+        <p class="card-text">이 프로젝트는 서점에 판매되는 비슷한 책제목에 대한 호기심에서 시작됐습니다. <br>
+            왜 분야마다 특정 키워드에 대한 책이 많이 진열되어있는지 궁금했고, <br>
+            어쩌면 “현시대의 트렌드가 책에  반영”   될수도 있다는 생각이 들었습니다.  <br>
+            그동안 배운 파이썬과 분석툴을 이용해 실제로 트렌드는 책과 연관성이 있는지 알아보기로 했습니다. </p><br><br>
+        <a href="/main" class="btn btn-secondary">START&nbsp;&#8250;</a>
+        </div>
+    </div>
+</div> </div>
+
+{%endblock%}

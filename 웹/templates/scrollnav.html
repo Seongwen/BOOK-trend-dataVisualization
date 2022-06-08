@@ -1,0 +1,74 @@
+<style>
+    .scrollspy-example{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; } 
+    
+
+</style>
+<div class="row" >
+    <div class="col-sm-2" >
+        <div id="list-example" class="list-group" >
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Page 1</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Page 2</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Page 3</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Page 4</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-5">Page 5</a>
+        </div>
+    </div>
+ 
+
+    <div class="col-10">
+        <div data-bs-spy="scroll"  data-bs-target="#list-example" data-bs-offset="200" class="scrollspy-example" tabindex="0"style="height: 89vh; overflow: auto;">
+            <h4 id="list-item-1">&nbsp;</h4>
+            <p>
+                <h2><b>&nbsp; Total bar graph</b></h2><br>
+                {% include "item1carousel2.html" %}<br>
+                <h2><b>&nbsp; Analysis Result</b></h2><br>
+
+                {% include "item1card.html" %}<br><br>
+               
+            </p>
+            <br><br><br><br><br>
+
+            <h4 id="list-item-2">&nbsp;</h4>
+            <p>
+                <h2><b>&nbsp; WordCloud</b></h2>
+                {% include "item2.html" %}<br><br>
+                {% include "collapse.html" %}
+                <br>
+                    
+            </p>
+            
+            <h5 id="list-item-3"><b>&nbsp;&nbsp;News</b></h5>
+            <p>{% include "item4.html" %}<br></p>
+            <br><br><br><br><br>
+            
+            <h4 id="list-item-4">&nbsp;</h4>
+            <p>
+                <h2><b>&nbsp; Keyword graph</b></h2><br>
+                {% include "item3.html" %}</p>
+            <br><br><br><br><br><br><br>
+            
+            <h4 id="list-item-5">&nbsp;</h4>
+            <h2><b>&nbsp; Result</b></h2><br>
+            <div style="text-align: center;">
+                <img src="/static/it4.png" width="25%" height="25%">
+            
+            <p><h4><b>최근 도서명/분류 분석</b></h4><br>
+                최근 출간된 도서명 분석에서는 생각보다 특정한 경향성을 찾기는 어려웠고<br>
+                오히려 그 해당 도서 분야의 일반적인 출간 경향이 더 반영되기 쉬웠다.<br>
+                시대적인 흐름이 반영되려면 조금 더 장기간의 출간 경향을 분석한 데이터가  <br>
+                필요할 것으로 생각된다. </p>
+            </div>
+                <div style=" text-align : right; padding-right: 10px;">
+                <div class="btn-group-sm" role="group" aria-label="Basic outlined example">
+                    <div class="btn btn"></div>
+                    <a href="/thx" type="button" class="btn btn-outline-primary">&#8250;</a>
+                  </div>
+                </div>
+                <br>
+        </div>
+    </div>
+</div>
+
+
+
+
