@@ -1,7 +1,7 @@
 
 # 시대상황을 반영한 도서 트렌드 분석
 
-###“책은 시대상황과 연관이 있을까?”
+### “책은 시대상황과 연관이 있을까?”
 
 데이터 출처 :    
 (교보문고 베스트셀러) http://www.kyobobook.co.kr/bestSellerNew/bestseller.laf?orderClick=D0a   
